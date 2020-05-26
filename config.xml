@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+ <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.myapp.canadopt"
+        versionCode = "10" 
+        version     = "1.0.0" >
+    <name>myapp</name>
+
+    <description>
+        CanAdopt
+    </description>
+
+    <author href="https://mysite" email="mymail">
+        CanAdopt
+    </author>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+    <feature name="CanAdopt">
+    <param name="android-package" value="org.apache.cordova.CanAdopt"/>
+    </feature>
+
+    <feature name="NetworkStatus">
+    <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+</feature>
+<access origin="*" />
+<plugin name="cordova-plugin-whitelist" version="1" />
+<allow-intent href="http://*/*" />
+<allow-intent href="https://*/*" />
+<allow-intent href="tel:*" />
+<allow-intent href="sms:*" />
+<allow-intent href="mailto:*" />
+<allow-intent href="geo:*" />
+<platform name="android">
+    <allow-intent href="market:*" />
+</platform>
+<platform name="ios">
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+</platform>
+</widget>
